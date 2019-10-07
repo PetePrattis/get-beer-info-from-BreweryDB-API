@@ -1,4 +1,4 @@
-# A Python Programm / Project
+# A Python Program / Project
 
 **This is a simple python project from my early days as a Computer Science student**
 
