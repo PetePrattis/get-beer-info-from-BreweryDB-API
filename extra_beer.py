@@ -1,14 +1,16 @@
 #!/usr/bin/python
 # -*- coding: utf8 -*-
 
+#Author Παναγιώτης Πράττης/Panagiotis Prattis
+
 '''
-Νίκος Κοντόπουλος Π15056
-Άσκηση 5
-Γράψτε ένα πρόγραμμα το οποίο χρησιμοποιεί το API του
-BreweryDB (http://www.brewerydb.com/developers).
-Εμφανίστε στο χρήστη τις μπύρες που είναι καταχωρημές στη βάση
-για το είδος μπύρας που ζήτησε ο χρήστης, εμφανίζοντας μόνο τα απαραίτητα πεδία κειμένου.
-BreweryDb.search({'type':'beer','q':'unibroue'}
+A program which uses the BreweryDB API http://www.brewerydb.com/developers 
+that shows the beers in the database for the beer kind the user requested. 
+The fields: BreweryDb.search({'type':'beer','q':'unibroue'}
+'''
+
+'''
+Within this archive there is extra code with which I experimented... not functional.
 '''
 
 import json
@@ -17,10 +19,10 @@ import urllib
 from brewerydb import *
 import brewerydb
 from brewerydb.brewerydb import BreweryDB
-#from .beer import Beer, Beers
-#from .brewery import Brewery, Breweries
+from .beer import Beer, Beers
+from .brewery import Brewery, Breweries
 
-'''
+
 
 BASE_URL = 'http://api.brewerydb.com/v2'
 
@@ -124,14 +126,6 @@ class BreweryDB(object):
         return Brewery(response['data'])
 
 
-    
-
-
-    
-'''
-
-
-
 DEFAULT_BASE_URI = "http://api.brewerydb.com/v2"
 BASE_URI = DEFAULT_BASE_URI
 API_KEY = "47f25f72907f1924061a1ee9b57d6f10"
@@ -194,7 +188,7 @@ print beers
 
 #print beers
 
-'''
+
 style('Fat Tire');
 @property
 def style(self):
@@ -218,16 +212,3 @@ class Beer(object):
 
     def __unicode__(self):
         return self.name
-'''
-
-
-
-'''
-
-https://github.com/dstegelman/PyBreweryDB/blob/master/brewerydb/beer.py
-https://pypi.python.org/pypi/pybrewerydb
-
-'''
-
-
-
