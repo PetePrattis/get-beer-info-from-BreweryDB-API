@@ -45,11 +45,11 @@ class BreweryDB(object):
 
 
 
-    def __init__(self, api_key="47f25f72907f1924061a1ee9b57d6f10"):
+    def __init__(self, api_key="key"):
         self.api_key = api_key
         
     def _auth(self):
-        return "47f25f72907f1924061a1ee9b57d6f10=%s" % self.api_key
+        return "key=%s" % self.api_key
         
     def _call(self, resource_url, params=None):
         url = "%s/%s" % (BASE_URL, resource_url)
@@ -128,7 +128,7 @@ class BreweryDB(object):
 
 DEFAULT_BASE_URI = "http://api.brewerydb.com/v2"
 BASE_URI = DEFAULT_BASE_URI
-API_KEY = "47f25f72907f1924061a1ee9b57d6f10"
+API_KEY = "key"
 
 simple_endpoints = ["beers", "breweries", "categories", "events",
                     "featured", "features", "fluidsizes", "glassware",
@@ -180,7 +180,7 @@ class BreweryDb:
 
 #configure(API_KEY, DEFAULT_BASE_URI);
 x = raw_input("Give name of category you want to search for ")
-brew_api = BreweryDB('47f25f72907f1924061a1ee9b57d6f10')
+brew_api = BreweryDB('key')
 #beers = brew_api.search_beer('fat tire')
 beers = brew_api.search_beer(x)
 print beers
@@ -200,8 +200,6 @@ def style(self):
     else:
         return None
 print style('Fat Tire')
-
-
 
 
 class Beer(object):
