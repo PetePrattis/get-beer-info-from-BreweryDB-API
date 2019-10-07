@@ -8,7 +8,7 @@ and is one of a few such simple python programms neccessary to pass the class_
 
 > #### Description of project
 >
->>
+>>A program which uses the BreweryDB API http://www.brewerydb.com/developers that shows the beers in the database for the beer kind the user requested. 
 
 > #### About this project
 >
