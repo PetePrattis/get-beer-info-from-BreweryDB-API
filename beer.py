@@ -19,7 +19,7 @@ from brewerydb.brewerydb import BreweryDB
 
 DEFAULT_BASE_URI = "http://api.brewerydb.com/v2"
 BASE_URI = DEFAULT_BASE_URI
-API_KEY = "47f25f72907f1924061a1ee9b57d6f10"
+API_KEY = "key"
 
 simple_endpoints = ["beers", "breweries", "categories", "events",
                     "featured", "features", "fluidsizes", "glassware",
@@ -68,7 +68,7 @@ class BreweryDb:
             setattr(BreweryDb, endpoint.replace('/', '_'), fun)
 
 x = raw_input("Give name of category you want to search for ")
-brew_api = BreweryDB('47f25f72907f1924061a1ee9b57d6f10')
+brew_api = BreweryDB('key')
 #beers = brew_api.search_beer('fat tire')
 beers = brew_api.search_beer(x)
 #x= brew_api.search_categories.json()
