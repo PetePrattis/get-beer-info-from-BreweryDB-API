@@ -14,5 +14,5 @@ and is one of a few such simple python programms neccessary to pass the class_
 >
 > - The comments to make the code understandable, are within the .py archive
 > - This program runs for Python version 2.7
-> - This repository was created to show the variety of my work and experience as a student
+> - This repository was created to show the variety of my work I did and experience I gained as a student
 >
